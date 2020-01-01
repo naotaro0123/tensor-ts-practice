@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+  <script defer src="main.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">MNIST recognition with TensorFlow.js</h1>
+    <h2 class="subtitle">Using Keras pre-trained model (CNN)</h2>
+    <div class="columns is-centered">
+      <div class="column is-narrow">
+        <canvas id="draw-area" width="280" height="280" style="border: 2px solid;"></canvas>
+        <div class="field is-grouped">
+          <p class="control">
+            <a id="predict-button" class="button is-link is-loading">
+              Prediction
+            </a>
+          </p>
+          <p class="control">
+            <a id="reset-button" class="button">
+              Reset
+            </a>
+          </p>
+        </div>
+      </div>
+      <div class="column is-3">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Number</th>
+              <th>Accuracy</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>0</th>
+              <td class="accuracy" data-row-index="0">-</td>
+            </tr>
+            <tr>
+              <th>1</th>
+              <td class="accuracy" data-row-index="1">-</td>
+            </tr>
+            <tr>
+              <th>2</th>
+              <td class="accuracy" data-row-index="2">-</td>
+            </tr>
+            <tr>
+              <th>3</th>
+              <td class="accuracy" data-row-index="3">-</td>
+            </tr>
+            <tr>
+              <th>4</th>
+              <td class="accuracy" data-row-index="4">-</td>
+            </tr>
+            <tr>
+              <th>5</th>
+              <td class="accuracy" data-row-index="5">-</td>
+            </tr>
+            <tr>
+              <th>6</th>
+              <td class="accuracy" data-row-index="6">-</td>
+            </tr>
+            <tr>
+              <th>7</th>
+              <td class="accuracy" data-row-index="7">-</td>
+            </tr>
+            <tr>
+              <th>8</th>
+              <td class="accuracy" data-row-index="8">-</td>
+            </tr>
+            <tr>
+              <th>9</th>
+              <td class="accuracy" data-row-index="9">-</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
