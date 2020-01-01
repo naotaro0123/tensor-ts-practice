@@ -33,7 +33,6 @@ module.exports = {
     watchContentBase: true,
     port: 4000,
     open: true,
-    openPage: './indexMnist.html'
-    // openPage: './index.html'
+    openPage: './index.html'
   }
 };
