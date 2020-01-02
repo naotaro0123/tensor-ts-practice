@@ -1,4 +1,5 @@
 const path = require('path');
+const WorkerLoader = require('worker-plugin');
 
 module.exports = {
   mode: 'development',
@@ -25,6 +26,7 @@ module.exports = {
       }
     ]
   },
+  plugins: [new WorkerLoader()],
   resolve: {
     extensions: ['.ts', '.js']
   },
