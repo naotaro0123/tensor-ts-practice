@@ -1,5 +1,5 @@
-# three-ts-tensor
-three.js x TypeScript My Practice
+# tensor-ts-practice
+tensorflow.js x TypeScript My Practice
 
 ## Build Setup
 use node v13.2.0

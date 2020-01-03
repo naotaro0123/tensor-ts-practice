@@ -26,10 +26,12 @@ class MnistSipmle {
     const predictButton = document.getElementById('predict-button');
     predictButton.addEventListener('click', () => this.prediction());
 
-    tf.loadLayersModel('../models/mnist_model/model.json').then(pretrainedModel => {
-      predictButton.classList.remove('is-loading');
-      this.model = pretrainedModel;
-    });
+    tf.loadLayersModel('../models/mnist_model/model.json').then(
+      pretrainedModel => {
+        predictButton.classList.remove('is-loading');
+        this.model = pretrainedModel;
+      }
+    );
   }
 
   private getImageData(): ImageData {
